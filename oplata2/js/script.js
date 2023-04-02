@@ -3,7 +3,7 @@ async function getData() {
      mode: 'no-cors',                            
      headers: {
             
-            'Access-Control-Allow-Origin': '*',
+            
             'Content-Type': 'application/x-www-form-urlencoded',
            
         }
