@@ -210,7 +210,7 @@ btnClose.addEventListener('click', (e) => {
 btnModal2.addEventListener('click', () => {
         overlayTable3.classList.add('active');
         overlay.classList.add('active');
-        getPayClient().catch(alert);
+        
     })
     /* *********************************************************** */
 inputSearch.addEventListener('input', () => {
