@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <title>Контроль оплат</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1> Контроль оплат</h1>
+    </div>
+    <div class="box">
+        <div class="wrap_btn-modal">
+            <button class="btn-modal">&#10010</button>
+        </div>
+
+
+        <div class="search-input">
+            <input class="inp-s" type="text" placeholder="Поиск по фамилии..."><img class="loupe" src="img/loupe.png" alt="">
+        </div>
+        <div class="wrap_btn-modal">
+            <button class="btn-modal_2">&#8381</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="overlay-table3">
+            <div class="wrap_btn-close">
+                <button class="btn-close3">&#10006</button>
+            </div>
+            <div class="tableTitle_2">
+                <h3>Оплаченные:</h3>
+            </div>
+            <table class="table3">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Наименование органа</th>
+                        <th>Дата участия</th>
+                        <th>Фамилия подзащитного</th>
+                        <th>Стоимость за день</th>
+                    </tr>
+                </thead>
+                <tbody class="out3"></tbody>
+            </table>
+            <p class="total3-bottom">Всего:
+                <span class="total_3"></span> руб.
+            </p>
+            <div class="pagination"></div>
+        </div>
+        <div class="wrap-modal">
+            <form class="form" method="post" action="savedb.php">
+                <div class="wrap_btn-close">
+                    <button class="btn-close">&#10006</button>
+                </div>
+                <label for="organ">Наименование органа</label>
+                <input type="text" id="organ" name="name" required placeholder="Название органа" />
+                <label for="date">Дата участия</label>
+                <input type="date" id="date" name="date" />
+                <label for="client">Фамилия подзащитного</label>
+                <input type="text" id="client" name="client" required/>
+                <label for="cost">Стоимость за день участия</label>
+                <select id="cost" required name="cost">
+                    <option></option>
+                    <option value="3617.9">3617.9</option>
+                    <option value="4006.6">4006.6</option>
+                    <option value="2571.4">2571.4</option>
+                    <option value="3116.5">3116.5</option>
+                    <option value="3481.05">3481.05</option>
+                    <option value="2309.2">2309.2</option>
+                    <option value="2619.7">2619.7</option>
+                    <option value="2967">2967</option>
+                    <option value="2051.6">2051.6</option>
+                    <option value="2122.9">2122.9</option>
+                    <option value="2451.8">2451.8</option>
+                    <option value="1794">1794</option>
+                </select>
+                <div class="btn-wrapp">
+                    <button type="submit" class="btn-cost">Добавить</button>
+                </div>
+            </form>
+        </div>
+        <div id="overlay-table">
+            <div class="wrap_btn-close">
+                <button class="btn-close2">&#10006</button>
+            </div>
+            <div class="tableTitle">
+            </div>
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Наименование органа</th>
+                        <th>Дата участия</th>
+                        <th>Фамилия подзащитного</th>
+                        <th>Стоимость за день</th>
+                    </tr>
+                </thead>
+                <tbody class="out2"></tbody>
+            </table>
+            <p class="total2-bottom">Всего:
+                <span class="total2"></span> руб.
+            </p>
+        </div>
+        <div class="overlay" id="overlay-modal"></div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Наименование органа</th>
+                    <th>Дата участия</th>
+                    <th>Фамилия подзащитного</th>
+                    <th>Стоимость за день</th>
+                    <th>Удалить</th>
+                </tr>
+            </thead>
+            <tbody class="out"></tbody>
+            <tfoot>
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td><b>Итого:</b></td>
+                    <td><b class="total"></b> руб.</td>
+                    <td> </td>
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="arrow-box">
+        <button class="arrow"><img src="img/up_arrow.png"></button>
+    </div>
+    <script src="js/moment.js"></script>
+    <script src="js/variable.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

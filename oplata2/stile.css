@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.767);
+    padding-bottom: 25px;
+}
+
+table .total-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+table {
+    background-color: #f9f9b9;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    margin: 20px 0;
+    width: 100%;
+}
+
+@media (max-width:550px) {
+    .title {
+        margin: 20px 120px 20px 0;
+    }
+}
+
+@media (max-width:449px) {
+    .title {
+        margin: 20px 60px;
+    }
+    .search-input {
+        left: 60px;
+    }
+}
+
+@media (max-width:375px) {
+    .title {
+        margin: 20px 80px;
+    }
+    .search-input {
+        left: 80px;
+    }
+}
+
+@media (max-width:345px) {
+    .title {
+        margin: 20px 90px;
+    }
+    .search-input {
+        left: 90px;
+    }
+}
+
+@media (max-width:325px) {
+    .title {
+        margin: 20px 120px;
+    }
+    .search-input {
+        left: 120px;
+    }
+}
+
+.wrap_btn-modal {
+    position: relative;
+}
+
+td,
+th {
+    border: 0.5px solid grey;
+}
+
+.worked:hover {
+    background-color: #a8b9b1;
+}
+
+.btn-modal {
+    background-color: #60e42b;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #41ff4b, 0 0 20px #8dff41, 0 0 40px #41ffa0;
+    animation: scale 2.5s linear infinite;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px 12px;
+    top: 40px;
+    right: 40px;
+    position: fixed;
+}
+
+.btn-modal_2 {
+    background-color: yellow;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #051306, 0 0 20px #dcff41, 0 0 40px #fff241;
+    animation: scale 2.5s linear infinite;
+    font-size: 20px;
+    color: darkslategrey;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px 12px;
+    top: 40px;
+    left: 40px;
+    position: fixed;
+}
+
+@media (max-width:1070px) {
+    .btn-modal {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:645px) {
+    .btn-modal {
+        font-size: 10px;
+        padding: 10px;
+    }
+    table {
+        font-size: 10px;
+    }
+}
+
+.tableTitle,
+.tableTitle_2 {
+    margin-bottom: 20px;
+}
+
+.btn-modal:active {
+    transform: translateY(3px);
+    opacity: 0.7;
+}
+
+.overlay {
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    width: 50%;
+    opacity: 0;
+    visibility: hidden;
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    /* Должен быть выше чем у подложки*/
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    transition: 0.3s all;
+}
+
+.form.active,
+.overlay.active,
+#overlay-table.active,
+.overlay-table3.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-close {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 100%;
+    right: 8px;
+    top: 8px;
+    padding: 5px;
+    border: none;
+}
+
+.btn-close2,
+.btn-close3 {
+    position: fixed;
+    cursor: pointer;
+    border-radius: 100%;
+    right: 8px;
+    top: 8px;
+    padding: 5px;
+    border: none;
+}
+
+.btn-close:active {
+    transform: translateY(3px);
+    opacity: 0.7;
+}
+
+.btn-cost {
+    padding: 8px;
+    background-color: #60e42b;
+    box-shadow: 0 0 10px #41ff4b, 0 0 12px #8dff41, 0 0 15px #41ffa0;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+}
+
+.btn-cost:active {
+    transform: translateY(2px);
+    opacity: 0.7;
+}
+
+.total2-bottom,
+.total3-bottom {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.search-input {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.search-input input {
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.loupe {
+    right: 27px;
+    top: 6px;
+    opacity: 0.4;
+    position: relative
+}
+
+input,
+select {
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.table2,
+.table3 {
+    color: #000;
+}
+
+#overlay-table,
+.overlay-table3 {
+    background-color: #000;
+    color: antiquewhite;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 105vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 30px;
+    transition: 0.3s all;
+}
+
+.date {
+    width: 115px;
+}
+
+.client {
+    cursor: pointer;
+}
+
+.itog {
+    margin-top: 20px;
+}
+
+.td-del {
+    position: relative;
+}
+
+.btn-del {
+    background-color: red;
+    color: antiquewhite;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    margin-left: 15px;
+    box-shadow: 5px 2px 2px rgb(177 177 177);
+}
+
+.btn-del:active {
+    transform: translate(1px, 1px);
+}
+
+.worked.delete {
+    animation: opacity 1s ease-in-out;
+}
+
+td,
+th {
+    padding: 7px;
+    font-size: 16px;
+}
+
+.td-completed {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-box {
+    position: relative;
+    margin-top: 20px;
+}
+
+.arrow-box img {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    animation: scale 3s linear infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1.1, 1.1);
+    }
+    50% {
+        transform: scale(0.9, 0.9);
+    }
+    75% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
