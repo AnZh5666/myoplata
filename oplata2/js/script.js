@@ -2,18 +2,17 @@ async function getData() {
     let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata', {
         
         mode: 'no-cors',
-        credentials: "include",
+       
         headers: {
             "Accept": "application/json",
             "X-Requested-With": "XMLHttpRequest",
-            'Access-Control-Allow-Origin': 'interest-cohort',
-            "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
-            "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
-            'Content-Type': 'application/json',
-            'exmaple': 'example',
+            'Access-Control-Allow-Origin': '*',
            
-        },
-           referrerPolicy: 'no-referrer'                  }  )
+            'Content-Type': 'application/json',
+            
+           
+        }
+          )
     let result = await response.json()
     obj = Object.keys(result).map((key) => result[key])
     obj.sort((a, b) => moment(a.date, 'DD.MM.YYYY') - moment(b.date, 'DD.MM.YYYY'))
