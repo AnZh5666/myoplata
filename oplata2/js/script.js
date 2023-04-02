@@ -7,7 +7,7 @@ async function getData() {
             'Access-Control-Allow-Origin': '*',
            
             'Content-Type': 'application/json',
-            
+        }
            
         }
           )
