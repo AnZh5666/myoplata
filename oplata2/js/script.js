@@ -1,8 +1,5 @@
 async function getData() {
-    let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata', {
-     mode: 'no-cors',                            
-    
-        })
+    let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata')
     let result = await response.json()
     obj = Object.keys(result).map((key) => result[key])
     obj.sort((a, b) => moment(a.date, 'DD.MM.YYYY') - moment(b.date, 'DD.MM.YYYY'))
