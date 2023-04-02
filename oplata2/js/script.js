@@ -12,7 +12,7 @@ async function getData() {
             'Content-Type': 'application/json',
             'exmaple': 'example',
            
-        },
+        },}
            referrerPolicy: 'no-referrer'                    )
     let result = await response.json()
     obj = Object.keys(result).map((key) => result[key])
