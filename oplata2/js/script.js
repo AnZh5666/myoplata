@@ -1,6 +1,6 @@
 async function getData() {
     let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata', {
-        method: 'GET',
+        
         mode: 'no-cors',
         credentials: "include",
         headers: {
