@@ -1,6 +1,6 @@
 async function getData() {
     let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata', {
-     mode: same-origin,                            
+     mode: 'same-origin',                            
      headers: {
             "Accept": "application/json",
             'Access-Control-Allow-Origin': '*',
