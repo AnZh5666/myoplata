@@ -1,10 +1,12 @@
 async function getData() {
-    let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata',
+    let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata', {
+     mode: same-origin,                            
      headers: {
             "Accept": "application/json",
             'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded',
             'exmaple': 'example'
+        }
         })
     let result = await response.json()
     obj = Object.keys(result).map((key) => result[key])
