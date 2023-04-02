@@ -14,8 +14,8 @@ async function getData() {
 getData().catch(alert);
 
 
-/* async function getPayClient() {
-    let response = await fetch('../db/takepayclient.php')
+async function getPayClient() {
+    let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/payclient')
     let result = await response.json()
 
     delArr = Object.keys(result).map((key) => result[key])
@@ -38,7 +38,7 @@ function fillPayClient(delArr) {
     })
     total3.innerHTML = Math.round(sum3);
 
-} */
+} 
 // функция заполнения таблицы
 function fillTable(obj) {
     out.innerHTML = "";
