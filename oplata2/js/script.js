@@ -1,11 +1,9 @@
 async function getData() {
     let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata', {
-        
-        mode: 'no-cors',
        
         headers: {
             "Accept": "application/json",
-            "X-Requested-With": "XMLHttpRequest",
+            
             'Access-Control-Allow-Origin': '*',
            
             'Content-Type': 'application/json',
