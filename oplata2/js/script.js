@@ -163,7 +163,7 @@ btnClose.addEventListener('click', (e) => {
         overlayTable.classList.remove('active');
     })
     // Функция при нажатии на фамилию в таблицу выводит все по этой фамилии в отдельном окне
-    /* table.addEventListener('click', (e) => {
+     table.addEventListener('click', (e) => {
             let target = e.target;
             target.parentElement.style.background = ""
             out2.innerHTML = "";
@@ -198,7 +198,7 @@ btnClose.addEventListener('click', (e) => {
                 total2.innerHTML = Math.round(sum2);
                 arrClient = [];
             }
-        }) */
+        }) 
     /* *********************************************************** */
 btnModal2.addEventListener('click', () => {
         overlayTable3.classList.add('active');
