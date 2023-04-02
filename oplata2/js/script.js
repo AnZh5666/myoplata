@@ -1,12 +1,7 @@
 async function getData() {
     let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata', {
      mode: 'no-cors',                            
-     headers: {
-            
-            
-            'Content-Type': 'application/x-www-form-urlencoded',
-           
-        }
+    
         })
     let result = await response.json()
     obj = Object.keys(result).map((key) => result[key])
