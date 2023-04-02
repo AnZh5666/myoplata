@@ -6,14 +6,14 @@ async function getData() {
         headers: {
             "Accept": "application/json",
             "X-Requested-With": "XMLHttpRequest",
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': 'interest-cohort',
             "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
             "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
             'Content-Type': 'application/json',
             'exmaple': 'example',
            
-        },}
-           referrerPolicy: 'no-referrer'                    )
+        },
+           referrerPolicy: 'no-referrer'                  }  )
     let result = await response.json()
     obj = Object.keys(result).map((key) => result[key])
     obj.sort((a, b) => moment(a.date, 'DD.MM.YYYY') - moment(b.date, 'DD.MM.YYYY'))
