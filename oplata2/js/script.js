@@ -10,9 +10,10 @@ async function getData() {
             "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
             "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
             'Content-Type': 'application/json',
-            'exmaple': 'example'
-        }
-                              )
+            'exmaple': 'example',
+           
+        },
+           referrerPolicy: 'no-referrer'                    )
     let result = await response.json()
     obj = Object.keys(result).map((key) => result[key])
     obj.sort((a, b) => moment(a.date, 'DD.MM.YYYY') - moment(b.date, 'DD.MM.YYYY'))
