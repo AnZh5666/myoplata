@@ -18,6 +18,10 @@ header {
     margin-bottom: 100px;
 }
 
+.container {
+    top: 20px;
+}
+
 .text {
     display: block;
     color: #fff;
