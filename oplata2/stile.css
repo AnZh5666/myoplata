@@ -14,13 +14,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
 }
+
 .text {
     display: block;
     color: #fff;
     margin-top: 50px;
     font-size: 10px;
 }
+
 table .total-line {
     display: flex;
     align-items: center;
@@ -107,7 +110,7 @@ th {
     text-align: center;
     cursor: pointer;
     padding: 10px 12px;
-    top: 40px;
+    /* top: 40px; */
     right: 40px;
     position: fixed;
 }
@@ -123,7 +126,7 @@ th {
     text-align: center;
     cursor: pointer;
     padding: 4px 12px;
-    top: 40px;
+    /* top: 40px; */
     left: 40px;
     position: fixed;
 }
