@@ -15,6 +15,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    margin-bottom: 100px;
 }
 
 .text {
