@@ -17,6 +17,12 @@ header {
     width: 100%;
 }
 
+@media( max-width: 578px) {
+    header {
+        justify-content: space-between;
+    }
+}
+
 .container {
     position: absolute;
     width: 100%;
