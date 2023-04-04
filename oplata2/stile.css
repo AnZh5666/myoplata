@@ -102,10 +102,10 @@ th {
 }
 
 .btn-modal_2 {
-    background-color: yellow;
+    background-color: #00b4ff;
     border: 1px solid white;
     border-radius: 50%;
-    box-shadow: 0 0 10px #051306, 0 0 20px #dcff41, 0 0 40px #fff241;
+    box-shadow: 0 0 10px #051306, 0 0 20px #005fff, 0 0 40px #41c7ff;
     animation: scale 2.5s linear infinite;
     font-size: 20px;
     color: darkslategrey;
