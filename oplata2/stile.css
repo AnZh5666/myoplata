@@ -13,8 +13,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: fixed;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -115,10 +114,10 @@ th {
     color: #fff;
     text-align: center;
     cursor: pointer;
-    padding: 10px 12px;
+    padding: 7px 14px;
     /* top: 40px; */
     right: 40px;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .btn-modal_2 {
@@ -134,7 +133,7 @@ th {
     padding: 4px 12px;
     /* top: 40px; */
     left: 40px;
-    position: fixed;
+    /* position: fixed; */
 }
 
 @media (max-width:1070px) {
