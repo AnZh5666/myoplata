@@ -25,7 +25,7 @@ header {
 .text {
     display: block;
     color: #fff;
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 10px;
 }
 
@@ -110,14 +110,10 @@ th {
     border-radius: 50%;
     box-shadow: 0 0 10px #41ff4b, 0 0 20px #8dff41, 0 0 40px #41ffa0;
     animation: scale 2.5s linear infinite;
-    font-size: 20px;
     color: #fff;
     text-align: center;
     cursor: pointer;
     padding: 7px 14px;
-    /* top: 40px; */
-    right: 40px;
-    /* position: fixed; */
 }
 
 .btn-modal_2 {
@@ -126,14 +122,10 @@ th {
     border-radius: 50%;
     box-shadow: 0 0 10px #051306, 0 0 20px #005fff, 0 0 40px #41c7ff;
     animation: scale 2.5s linear infinite;
-    font-size: 20px;
     color: darkslategrey;
     text-align: center;
     cursor: pointer;
     padding: 4px 12px;
-    /* top: 40px; */
-    left: 40px;
-    /* position: fixed; */
 }
 
 @media (max-width:1070px) {
