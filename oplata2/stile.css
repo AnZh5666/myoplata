@@ -10,6 +10,11 @@ body {
     padding-bottom: 25px;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 table .total-line {
     display: flex;
     align-items: center;
