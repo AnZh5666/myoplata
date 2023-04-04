@@ -325,6 +325,7 @@ label {
 
 table {
     margin: 0 auto;
+    width: 100%;
 }
 
 .table2,
@@ -369,7 +370,8 @@ table {
 }
 
 .td-del {
-    position: relative;
+    width: 50px;
+    text-align: center;
 }
 
 .btn-del {
@@ -404,7 +406,8 @@ th {
     justify-content: center;
 }
 
-.arrow-box {
+
+/* .arrow-box {
     position: relative;
     margin-top: 20px;
 }
@@ -417,7 +420,7 @@ th {
     height: 30px;
     cursor: pointer;
     animation: scale 3s linear infinite;
-}
+} */
 
 @keyframes scale {
     0% {
