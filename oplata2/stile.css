@@ -39,6 +39,7 @@ table .total-line {
 table {
     background-color: #cbcbcb;
     padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .title {
@@ -125,17 +126,18 @@ th {
     padding: 7px 14px;
 }
 
-@media (max-width:1070px) {
+
+/* @media (max-width:1070px) {
     .btn-modal {
         font-size: 15px;
     }
-}
+} */
 
 @media (max-width:645px) {
-    .btn-modal {
+    /* .btn-modal {
         font-size: 10px;
         padding: 10px 12px;
-    }
+    } */
     table {
         font-size: 10px;
     }
@@ -337,7 +339,7 @@ table {
 }
 
 .btn-del {
-    background-color: red;
+    background-color: rgba(88, 88, 88, 0.856);
     color: antiquewhite;
     font-weight: bold;
     cursor: pointer;
