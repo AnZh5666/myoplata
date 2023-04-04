@@ -1,8 +1,8 @@
 async function getData() {
-    let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata', {       
+    let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata', {
         headers: {
-                      
-            'Access-Control-Allow-Origin': '*',           
+
+            'Access-Control-Allow-Origin': '*',
             'Content-Type': 'application/x-www-form-urlencoded'
         }
     })
@@ -38,7 +38,7 @@ function fillPayClient(delArr) {
     })
     total3.innerHTML = Math.round(sum3);
 
-} 
+}
 // функция заполнения таблицы
 function fillTable(obj) {
     out.innerHTML = "";
@@ -163,30 +163,30 @@ btnClose.addEventListener('click', (e) => {
         overlayTable.classList.remove('active');
     })
     // Функция при нажатии на фамилию в таблицу выводит все по этой фамилии в отдельном окне
-     table.addEventListener('click', (e) => {
-            let target = e.target;
-            target.parentElement.style.background = ""
-            out2.innerHTML = "";
-            if (target.className != 'client') {
-                return;
-            } else {
-                nameClient = target.textContent;
-                obj.map((item) => {
-                    if (nameClient === item.client) {
-                        arrClient.push(item);
-                        arrClient.sort((a, b) => moment(a.date, 'DD.MM.YYYY') - moment(b.date, 'DD.MM.YYYY'))
-                    }
-                });
-                overlay.classList.add('active');
-                overlayTable.classList.add('active');
-                sum2 = arrClient.reduce((acc, elem) => acc + (+elem.cost), 0);
+table.addEventListener('click', (e) => {
+        let target = e.target;
+        target.parentElement.style.background = ""
+        out2.innerHTML = "";
+        if (target.className != 'client') {
+            return;
+        } else {
+            nameClient = target.textContent;
+            obj.map((item) => {
+                if (nameClient === item.client) {
+                    arrClient.push(item);
+                    arrClient.sort((a, b) => moment(a.date, 'DD.MM.YYYY') - moment(b.date, 'DD.MM.YYYY'))
+                }
+            });
+            overlay.classList.add('active');
+            overlayTable.classList.add('active');
+            sum2 = arrClient.reduce((acc, elem) => acc + (+elem.cost), 0);
 
-                arrClient.map((elem, index) => {
-                    tableTitle.innerHTML = `
+            arrClient.map((elem, index) => {
+                tableTitle.innerHTML = `
                     <h3>Оплата - ${elem.client}</h3>
                     `
-                    out2.innerHTML +=
-                        `<tr>
+                out2.innerHTML +=
+                    `<tr>
                         <td>${index+1}</td>
                         <td>${elem.name}</td>
                         <td class='date'>${elem.date}</td>
@@ -194,11 +194,11 @@ btnClose.addEventListener('click', (e) => {
                         <td>${elem.cost}</td>
                     </tr>        
                 `
-                })
-                total2.innerHTML = Math.round(sum2);
-                arrClient = [];
-            }
-        }) 
+            })
+            total2.innerHTML = Math.round(sum2);
+            arrClient = [];
+        }
+    })
     /* *********************************************************** */
 btnModal2.addEventListener('click', () => {
         overlayTable3.classList.add('active');
@@ -223,9 +223,3 @@ inputSearch.addEventListener('input', () => {
         })
     })
     /* ************************************************************ */
-arrowUp.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    })
-})
