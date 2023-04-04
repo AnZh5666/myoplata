@@ -60,7 +60,7 @@ const createStringTable = (item, index) => {
                 <td>${item.name}</td>
                 <td class='date'>${item.date}</td>
                 <td class="client">${item.client}</td>
-                <td>${item.cost}</td>
+                <td class="cost">${item.cost}</td>
                 <td class="td-del"><button class="btn-del" onclick="deleteObj(${index},${item.id})">&#10006</button></td>
             </tr>
     `
