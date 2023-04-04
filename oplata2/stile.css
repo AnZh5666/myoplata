@@ -126,7 +126,7 @@ th {
 @media (max-width:645px) {
     .btn-modal {
         font-size: 10px;
-        padding: 10px;
+        padding: 10px 12px;
     }
     table {
         font-size: 10px;
