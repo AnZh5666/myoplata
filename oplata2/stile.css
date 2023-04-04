@@ -15,10 +15,10 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-@media (max-width:400px) {
-    .search-title-wrap {
-        margin-left: 90px;
-    }
+.text {
+    display: block;
+    color: #fff;
+    margin-top: 7px;
 }
 table .total-line {
     display: flex;
