@@ -51,12 +51,8 @@ table {
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: antiquewhite;
     margin: 20px 0;
-    width: 100%;
 }
 
 
