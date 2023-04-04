@@ -15,11 +15,7 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-.search-title-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}    
+    
 table .total-line {
     display: flex;
     align-items: center;
