@@ -15,7 +15,11 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-    
+@media (max-width:400px) {
+    .search-title-wrap {
+        margin-left: 30px;
+    }
+}
 table .total-line {
     display: flex;
     align-items: center;
