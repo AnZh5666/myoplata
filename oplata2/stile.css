@@ -18,7 +18,8 @@ header {
 .text {
     display: block;
     color: #fff;
-    margin-top: 7px;
+    margin-top: 50px;
+    font-size: 10px;
 }
 table .total-line {
     display: flex;
