@@ -56,7 +56,7 @@ const createStringTable = (item, index) => {
 
     return `
             <tr class="worked">
-                <td>${index+1}</td>
+                <td class='num'>${index+1}</td>
                 <td>${item.name}</td>
                 <td class='date'>${item.date}</td>
                 <td class="client">${item.client}</td>
