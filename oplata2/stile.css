@@ -175,13 +175,22 @@ form {
     border: none;
 }
 
-.btn-close2,
 .btn-close3 {
     position: fixed;
     cursor: pointer;
     border-radius: 50%;
     right: 18px;
     top: 26px;
+    padding: 2px 7px;
+    border: none;
+}
+
+.btn-close2 {
+    position: fixed;
+    cursor: pointer;
+    border-radius: 50%;
+    right: 18px;
+    top: 16px;
     padding: 2px 7px;
     border: none;
 }
