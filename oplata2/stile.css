@@ -421,16 +421,18 @@ th {
     font-size: 16px;
 }
 
-th,
+th {
+    padding: 4px;
+}
+
 .num {
     padding: 4px;
 }
 
-
-/* .td-completed {
+.td-completed {
     display: flex;
     justify-content: center;
-} */
+}
 
 
 /* .arrow-box {
