@@ -394,16 +394,15 @@ table {
 }
 
 .btn-del {
-    background-color: rgba(88, 88, 88, 0.856);
-    color: antiquewhite;
+    background-color: #cbcbcb;
+    color: lightskyblue;
     font-weight: bold;
     cursor: pointer;
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 27px;
-    height: 27px;
-    margin-left: 15px;
-    box-shadow: 5px 2px 2px rgb(177 177 177);
+    border: none;
+    /* width: 27px;
+    height: 27px; */
+    /*  margin-left: 15px;
+    box-shadow: 5px 2px 2px rgb(177 177 177); */
 }
 
 .btn-del:active {
@@ -416,14 +415,15 @@ table {
 
 td,
 th {
-    padding: 7px;
+    text-align: center;
     font-size: 16px;
 }
 
-.td-completed {
+
+/* .td-completed {
     display: flex;
     justify-content: center;
-}
+} */
 
 
 /* .arrow-box {
