@@ -397,7 +397,7 @@ table {
 .btn-del {
     background-color: #cbcbcb;
     color: #00b4ff;
-    font-weight: bold;
+    font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
     border: none;
