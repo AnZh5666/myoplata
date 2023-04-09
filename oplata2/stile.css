@@ -362,8 +362,10 @@ table {
     transition: 0.3s all;
 }
 
-.date {
-    width: 115px;
+@media (max-width: 600px) {
+    td .date {
+        font-size: 10px;
+    }
 }
 
 .client {
