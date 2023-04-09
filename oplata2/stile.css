@@ -51,6 +51,7 @@ table {
     background-color: #cbcbcb;
     padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
 }
 
 .title {
@@ -169,12 +170,8 @@ th {
 } */
 
 @media (max-width:645px) {
-    /* .btn-modal {
-        font-size: 10px;
-        padding: 10px 12px;
-    } */
     table {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
