@@ -290,6 +290,10 @@ form {
     font-weight: bold;
 }
 
+.search-title-wrap {
+    text-align: center;
+}
+
 .search-input {
     position: relative;
     width: 100%;
