@@ -168,10 +168,10 @@ form {
 .btn-close {
     position: absolute;
     cursor: pointer;
-    border-radius: 100%;
+    border-radius: 50%;
     right: 8px;
-    top: 8px;
-    padding: 5px;
+    top: 26px;
+    padding: 2px 7px;
     border: none;
 }
 
@@ -179,10 +179,10 @@ form {
 .btn-close3 {
     position: fixed;
     cursor: pointer;
-    border-radius: 100%;
+    border-radius: 50%;
     right: 8px;
-    top: 8px;
-    padding: 2px 5px;
+    top: 26px;
+    padding: 2px 7px;
     border: none;
 }
 
