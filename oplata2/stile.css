@@ -103,19 +103,6 @@ th {
     padding: 7px 14px;
 }
 
-
-/* @media (max-width:1070px) {
-    .btn-modal {
-        font-size: 15px;
-    }
-} */
-
-@media (max-width:645px) {
-    table {
-        font-size: 12px;
-    }
-}
-
 .tableTitle,
 .tableTitle_2 {
     margin-bottom: 20px;
@@ -232,8 +219,6 @@ form {
 }
 
 .search-input {
-    /*  position: relative; */
-    /*  width: 100%; */
     margin-left: 20px;
     margin-bottom: 30px;
     text-align: center;
@@ -307,7 +292,7 @@ label {
         font-size: 13px;
     }
     .date {
-        font-size: 12px;
+        font-size: 13px;
         padding: 0;
         text-align: center;
     }
@@ -333,10 +318,6 @@ label {
     font-weight: bold;
     cursor: pointer;
     border: none;
-    /* width: 27px;
-    height: 27px; */
-    /*  margin-left: 15px;
-    box-shadow: 5px 2px 2px rgb(177 177 177); */
 }
 
 .btn-del:active {
@@ -366,22 +347,6 @@ th {
     display: flex;
     justify-content: center;
 }
-
-
-/* .arrow-box {
-    position: relative;
-    margin-top: 20px;
-}
-
-.arrow-box img {
-    position: fixed;
-    right: 20px;
-    bottom: 50px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    animation: scale 3s linear infinite;
-} */
 
 @keyframes scale {
     0% {
