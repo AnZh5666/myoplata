@@ -363,6 +363,13 @@ table {
 }
 
 @media (max-width: 600px) {
+    .date {
+        font-size: 14px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
     td {
         font-size: 13px;
     }
