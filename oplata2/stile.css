@@ -9,6 +9,7 @@ body {
     background: rgba(0, 0, 0, 0.767);
     padding-bottom: 25px;
     padding-left: 15px;
+    padding-right: 22px;
 }
 
 header {
@@ -17,6 +18,7 @@ header {
     justify-content: space-around;
     min-width: 573px;
     flex-wrap: nowrap;
+    margin-left: 30px;
 }
 
 @media( max-width: 513px) {
