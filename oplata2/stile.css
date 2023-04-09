@@ -281,12 +281,6 @@ label {
 
 @media (max-width:788px) {
     .date {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 647px) {
-    .date {
         font-size: 14px;
         padding: 0;
         text-align: center;
