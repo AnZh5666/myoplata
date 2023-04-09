@@ -279,6 +279,12 @@ label {
     transition: 0.3s all;
 }
 
+@media (max-width:788px) {
+    .date {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 647px) {
     .date {
         font-size: 14px;
