@@ -27,10 +27,11 @@ header {
     }
 }
 
-.container {
+
+/* .container {
     position: absolute;
     width: 100%;
-}
+} */
 
 .text {
     display: block;
@@ -329,7 +330,7 @@ label {
 
 table {
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .table2,
