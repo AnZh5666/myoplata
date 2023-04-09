@@ -287,14 +287,12 @@ label {
     }
 }
 
-@media (max-width: 600px) {
-    td {
+@media (max-width: 632px) {
+    /*  td {
         font-size: 13px;
-    }
+    } */
     .date {
         font-size: 13px;
-        padding: 0;
-        text-align: center;
     }
 }
 
