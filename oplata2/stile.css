@@ -48,10 +48,10 @@ table .total-line {
 }
 
 table {
-    background-color: #cbcbcb;
+    background-color: #dddddd;
     padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .title {
@@ -322,11 +322,6 @@ select {
 label {
     font-weight: bold;
     margin-bottom: 5px;
-}
-
-table {
-    margin: 0 auto;
-    /* width: 100%; */
 }
 
 .table2,
