@@ -8,76 +8,64 @@
 body {
     background: rgba(0, 0, 0, 0.767);
     padding-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 22px;
 }
 
-header {
+
+.title {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    min-width: 573px;
-    flex-wrap: nowrap;
+    color: antiquewhite;
+    margin: 20px 0;
+    width: 100%;
 }
 
-@media( max-width: 513px) {
-    header {
-        justify-content: space-between;
-        width: 100%;
+@media (max-width:550px) {
+    .title {
+        margin: 20px 120px 20px 0;
     }
 }
 
-
-/* .container {
-    position: absolute;
-    width: 100%;
-} */
-
-.text {
-    display: block;
-    color: #fff;
-    margin-top: 16px;
-    font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@media (max-width:449px) {
+    .title {
+        margin: 20px 60px;
+    }
+    .search-input {
+        left: 60px;
+    }
 }
 
-table .total-line {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+@media (max-width:375px) {
+    .title {
+        margin: 20px 80px;
+    }
+    .search-input {
+        left: 80px;
+    }
 }
 
-table {
-    margin: 0 auto;
-    background-color: #f3f2f2;
-    padding: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+@media (max-width:345px) {
+    .title {
+        margin: 20px 90px;
+    }
+    .search-input {
+        left: 90px;
+    }
 }
 
-.out {
-    font-size: 19px;
-}
-
-.title {
-    color: antiquewhite;
-    margin: 20px 0;
+@media (max-width:325px) {
+    .title {
+        margin: 20px 120px;
+    }
+    .search-input {
+        left: 120px;
+    }
 }
 
 .wrap_btn-modal {
-    text-align: center;
+    position: relative;
 }
 
-td,
-th {
-    border: 0.5px solid grey;
-}
-
-.cost {
-    margin: 0;
-    padding: 0;
-    width: 90px;
-}
 
 .worked:hover {
     background-color: #a8b9b1;
@@ -89,18 +77,32 @@ th {
     border-radius: 50%;
     box-shadow: 0 0 10px #41ff4b, 0 0 20px #8dff41, 0 0 40px #41ffa0;
     animation: scale 2.5s linear infinite;
+    color: #fff;
     cursor: pointer;
-    padding: 7px 14px;
+    padding: 7px 18px;
+    top: 40px;
+    right: 12px;
+    position: fixed;
 }
 
 .btn-modal_2 {
-    background-color: #00b4ff;
+    background-color: yellow;
     border: 1px solid white;
     border-radius: 50%;
-    box-shadow: 0 0 10px #051306, 0 0 20px #005fff, 0 0 40px #41c7ff;
+    box-shadow: 0 0 10px #051306, 0 0 20px #dcff41, 0 0 40px #fff241;
     animation: scale 2.5s linear infinite;
+    color: darkslategrey;
     cursor: pointer;
-    padding: 7px 14px;
+    padding: 7px 18px;
+    top: 40px;
+    left: 12px;
+    position: fixed;
+}
+
+@media (max-width:445px) {
+    table {
+        font-size: 12px;
+    }
 }
 
 .tableTitle,
@@ -168,30 +170,21 @@ form {
 .btn-close {
     position: absolute;
     cursor: pointer;
-    border-radius: 50%;
-    right: 10px;
-    top: 10px;
-    padding: 2px 7px;
+    border-radius: 100%;
+    right: 8px;
+    top: 8px;
+    padding: 5px;
     border: none;
 }
 
+.btn-close2,
 .btn-close3 {
     position: fixed;
     cursor: pointer;
-    border-radius: 50%;
-    right: 18px;
-    top: 26px;
-    padding: 2px 7px;
-    border: none;
-}
-
-.btn-close2 {
-    position: fixed;
-    cursor: pointer;
-    border-radius: 50%;
-    right: 18px;
-    top: 16px;
-    padding: 2px 7px;
+    border-radius: 100%;
+    right: 8px;
+    top: 8px;
+    padding: 5px;
     border: none;
 }
 
@@ -223,17 +216,17 @@ form {
     font-weight: bold;
 }
 
-.search-title-wrap {
-    text-align: center;
-}
-
-.search-input {
-    margin-left: 20px;
+.input-group.search-input {
+   display: block;
+   text-align: center;
     margin-bottom: 30px;
-    text-align: center;
 }
-
+.box {
+    display: flex;
+    justify-content: center;
+}
 .search-input input {
+    margin: 0 auto;
     padding: 10px;
     font-size: 14px;
     border: none;
@@ -241,11 +234,10 @@ form {
     border-radius: 5px;
 }
 
-.loupe {
-    right: 27px;
-    top: 6px;
-    opacity: 0.4;
-    position: relative
+.btn-search {
+    padding: 5px;
+    height: 43px;
+   
 }
 
 input,
@@ -259,10 +251,15 @@ label {
     margin-bottom: 5px;
 }
 
-.table2,
+table {
+    margin: 0 auto;
+}
+
+
+/* .table2,
 .table3 {
     color: #000;
-}
+} */
 
 #overlay-table,
 .overlay-table3 {
@@ -288,24 +285,21 @@ label {
     transition: 0.3s all;
 }
 
-.date {
-    font-size: 15px;
-}
-
-@media (max-width:788px) {
+@media (max-width: 992px) {
     .date {
-        font-size: 14px;
-        padding: 0;
-        text-align: center;
+        width: 100%;
     }
 }
 
-@media (max-width: 632px) {
-    /*  td {
-        font-size: 13px;
-    } */
+@media (max-width: 767px) {
     .date {
-        font-size: 13px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 451px) {
+    .date {
+        font-size: 14px;
     }
 }
 
@@ -317,18 +311,13 @@ label {
     margin-top: 20px;
 }
 
-.td-del {
-    width: 50px;
-    text-align: center;
-}
-
 .btn-del {
-    background: transparent;
-    color: #00b4ff;
-    font-size: 1.4rem;
-    font-weight: bold;
     cursor: pointer;
-    border: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    margin-top: 15px;
 }
 
 .btn-del:active {
@@ -342,21 +331,6 @@ label {
 td,
 th {
     text-align: center;
-    font-size: 16px;
-    padding: 5px;
-}
-
-th {
-    padding: 4px;
-}
-
-.num {
-    padding: 4px;
-}
-
-.td-completed {
-    display: flex;
-    justify-content: center;
 }
 
 @keyframes scale {
