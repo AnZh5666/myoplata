@@ -1,5 +1,5 @@
 async function getData() {
-    let response = await fetch('https://6429930bebb1476fcc4c4806.mockapi.io/oplata', {
+    let response = await fetch('https://648a8b9517f1536d65e93b38.mockapi.io/oplata', {
         headers: {
 
             'Access-Control-Allow-Origin': '*',
