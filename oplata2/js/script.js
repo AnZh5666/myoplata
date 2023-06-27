@@ -3,7 +3,8 @@ async function getData() {
         headers: {
 
             'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Permissions-Policy' : 'Origin'
         }
     })
     let result = await response.json()
