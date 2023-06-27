@@ -109,32 +109,31 @@ const deleteObj = async(index, item) => {
 /* ************************************* */
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    /* let curDate = date.value.replace(/^(\d+)-(\d+)-(\d+)$/, `$3-$2-$1`);
+    let curDate = date.value.replace(/^(\d+)-(\d+)-(\d+)$/, `$3-$2-$1`);
     let newObj = { name: form[1].value, date: curDate, client: form[3].value, cost: +form[4].value };
     if (newObj.name == '' || newObj.date == '' || newObj.client == '' || newObj.cost == 0) {
         alert('Заполните все поля формы!')
         return false;
     } else {
-        fetch('../db/savedb.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(newObj),
-            })
+        fetch('https://648a8b9517f1536d65e93b38.mockapi.io/oplata', {
+            method: 'POST',
+            headers: {'content-type':'application/json'},
+            // Send your data in the request body as JSON
+            body: JSON.stringify(newObj)
+            })       
             .catch(function(error) {
                 console.log(error)
             })
-        obj.push(newObj);
-        sum = obj.reduce((acc, elem) => acc + (+elem.cost), 0);
-        fillTable(obj);
-        form[1].value = '';
-        date.value = '';
-        form[3].value = '';
-        form[4].value = 0; */
-    form.classList.remove('active');
-    overlay.classList.remove('active');
-    //}
+            obj.push(newObj);
+            sum = obj.reduce((acc, elem) => acc + (+elem.cost), 0);
+            fillTable(obj);
+            form[1].value = '';
+            date.value = '';
+            form[3].value = '';
+            form[4].value = 0;
+            form.classList.remove('active');
+            overlay.classList.remove('active');
+    }
 });
 //************************************************** */
 btnClose2.addEventListener('click', (e) => {
