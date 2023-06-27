@@ -117,7 +117,10 @@ btn.addEventListener('click', (e) => {
     } else {
         fetch('https://648a8b9517f1536d65e93b38.mockapi.io/oplata', {
             method: 'POST',
-            headers: {'content-type':'application/json'},
+            headers: {'content-type':'application/json',
+                     'Access-Control-Allow-Origin': '*',
+                     'Content-Type': 'application/x-www-form-urlencoded'
+        },
             // Send your data in the request body as JSON
             body: JSON.stringify(newObj)
             })       
