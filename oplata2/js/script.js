@@ -67,7 +67,7 @@ const createStringTable = (item, index) => {
     `
 }
 
-/* const addPayClient = async(elemObj) => {
+const addPayClient = async(elemObj) => {
         await fetch('../db/payclient.php', {
                 method: 'POST',
                 headers: {
@@ -106,7 +106,7 @@ const deleteObj = async(index, item) => {
         fillTable(obj);
         fillPayClient(delArr);
 
-    } */
+    }
 /* ************************************* */
 btn.addEventListener('click', (e) => {
     e.preventDefault();
